@@ -23,7 +23,7 @@
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>DEBUG</level>
+            <level>INFO</level>
         </filter>
         <prudent>true</prudent>
     </appender>
@@ -35,6 +35,9 @@
             </pattern>
             <charset>UTF-8</charset>
         </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
     </appender>
 
     <appender name="errorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
